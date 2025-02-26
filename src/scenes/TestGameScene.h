@@ -50,6 +50,10 @@ public:
         music->setLooping(true);
         music->setVolume(25.f);
         music->play();
+
+        if (rm->LoadShader("dontcare/testingload.vs", "", "test"))
+            std::cout << "OK" << std::endl;
+
     }
 
     void Clear() override
